@@ -1,7 +1,7 @@
 # For a stable, released kernel, released_kernel should be 1. For rawhide
 # and/or a kernel built from an rc or git snapshot, released_kernel should
 # be 0.
-%global released_kernel 1
+%global released_kernel 0
 
 # define buildid .local
 
@@ -42,7 +42,7 @@
 # The rc snapshot level
 %global rcrev 0
 # The git snapshot level
-%define gitrev 0
+%define gitrev 4
 # Set rpm version accordingly
 %define rpmversion 4.%{upstream_sublevel}.0
 %endif
@@ -174,6 +174,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Fri Aug 17 2018 Jeremy Cline <jeremy@jcline.org> - 4.19.0-0.rc0.git4.1
+- Linux v4.18-8108-g5c60a7389d79
+
 * Mon Aug 13 2018 Justin M. Forbes <jforbes@fedoraproject.org> - 4.18.0-1
 - Linux v4.18
 
