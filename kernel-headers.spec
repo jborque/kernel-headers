@@ -40,9 +40,9 @@
 # The next upstream release sublevel (base_sublevel+1)
 %define upstream_sublevel %(echo $((%{base_sublevel} + 1)))
 # The rc snapshot level
-%global rcrev 3
+%global rcrev 4
 # The git snapshot level
-%define gitrev 3
+%define gitrev 0
 # Set rpm version accordingly
 %define rpmversion 4.%{upstream_sublevel}.0
 %endif
@@ -174,6 +174,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Sep 17 2018 Jeremy Cline <jcline@redhat.com> - 4.19.0-0.rc4.git0.1
+- Linux v4.19-rc4.git0
+
 * Fri Sep 14 2018 Jeremy Cline <jcline@redhat.com> - 4.19.0-0.rc3.git3.1
 - Linux v4.19-rc3.git3
 
