@@ -42,7 +42,7 @@
 # The rc snapshot level
 %global rcrev 7
 # The git snapshot level
-%define gitrev 0
+%define gitrev 1
 # Set rpm version accordingly
 %define rpmversion 4.%{upstream_sublevel}.0
 %endif
@@ -174,6 +174,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Tue Oct 09 2018 Jeremy Cline <jcline@redhat.com> - 4.19.0-0.rc7.git1.1
+- Linux v4.19-rc7.git1
+
 * Mon Oct 08 2018 Jeremy Cline <jcline@redhat.com> - 4.19.0-0.rc7.git0.1
 - Linux v4.19-rc7.git0
 
