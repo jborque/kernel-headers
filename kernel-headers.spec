@@ -42,7 +42,7 @@
 # The rc snapshot level
 %global rcrev 0
 # The git snapshot level
-%define gitrev 6
+%define gitrev 7
 # Set rpm version accordingly
 %define rpmversion 4.%{upstream_sublevel}.0
 %endif
@@ -174,6 +174,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Wed Oct 31 2018 Justin M. Forbes <jforbes@fedoraproject.org> - 4.20.0-0.rc0.git7.1
+- Linux v4.20-rc0.git7
+
 * Tue Oct 30 2018 Justin M. Forbes <jforbes@fedoraproject.org> - 4.20.0-0.rc0.git6.1
 - Linux v4.20-rc0.git6
 
