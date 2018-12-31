@@ -42,7 +42,7 @@
 # The rc snapshot level
 %global rcrev 0
 # The git snapshot level
-%define gitrev 3
+%define gitrev 4
 # Set rpm version accordingly
 %define rpmversion 4.%{upstream_sublevel}.0
 %endif
@@ -174,6 +174,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Dec 31 2018 Laura Abbott <labbott@redhat.com> - 4.21.0-0.rc0.git4.1
+- Linux v4.21-rc0.git4
+
 * Sun Dec 30 2018 Laura Abbott <labbott@redhat.com> - 4.21.0-0.rc0.git3.1
 - Linux v4.21-rc0.git3
 
