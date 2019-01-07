@@ -21,7 +21,7 @@
 # base_sublevel is the kernel version we're starting with and patching
 # on top of -- for example, 3.1-rc7-git1 starts with a 3.0 base,
 # which yields a base_sublevel of 0.
-%define base_sublevel 20
+%define base_sublevel 0
 
 ## If this is a released kernel ##
 %if 0%{?released_kernel}
@@ -33,18 +33,19 @@
 %define stablerev %{stable_update}
 %define stable_base %{stable_update}
 %endif
-%define rpmversion 4.%{base_sublevel}.%{stable_update}
+%define rpmversion 5.%{base_sublevel}.%{stable_update}
 
 ## The not-released-kernel case ##
 %else
 # The next upstream release sublevel (base_sublevel+1)
-%define upstream_sublevel %(echo $((%{base_sublevel} + 1)))
+# %define upstream_sublevel %(echo $((%{base_sublevel} + 1)))
+%define upstream_sublevel 0
 # The rc snapshot level
-%global rcrev 0
+%global rcrev 1
 # The git snapshot level
-%define gitrev 7
+%define gitrev 0
 # Set rpm version accordingly
-%define rpmversion 4.%{upstream_sublevel}.0
+%define rpmversion 5.%{upstream_sublevel}.0
 %endif
 
 # pkg_release is what we'll fill in for the rpm Release: field
@@ -174,6 +175,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Jan 07 2019 Laura Abbott <labbott@redhat.com> - 4.1.0-0.rc1.git0.1
+- Linux v5.0-rc1.git0
+
 * Fri Jan 04 2019 Laura Abbott <labbott@redhat.com> - 4.21.0-0.rc0.git7.1
 - Linux v4.21-rc0.git7
 
