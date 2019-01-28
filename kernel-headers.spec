@@ -41,7 +41,7 @@
 # %define upstream_sublevel %(echo $((%{base_sublevel} + 1)))
 %define upstream_sublevel 0
 # The rc snapshot level
-%global rcrev 3
+%global rcrev 4
 # The git snapshot level
 %define gitrev 0
 # Set rpm version accordingly
@@ -175,6 +175,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Jan 28 2019 Laura Abbott <labbott@redhat.com> - 5.0.0-0.rc4.git0.1
+- Linux v5.0-rc4.git0
+
 * Mon Jan 21 2019 Laura Abbott <labbott@redhat.com> - 5.0.0-0.rc3.git0.1
 - Linux v5.0-rc3.git0
 
