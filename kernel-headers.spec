@@ -77,7 +77,6 @@
 
 Name: kernel-headers
 Summary: Header files for the Linux kernel for use by glibc
-Group: Development/System
 License: GPLv2
 URL: http://www.kernel.org/
 Version: %{rpmversion}
@@ -105,7 +104,6 @@ glibc package.
 
 %package -n kernel-cross-headers
 Summary: Header files for the Linux kernel for use by cross-glibc
-Group: Development/System
 
 %description -n kernel-cross-headers
 Kernel-cross-headers includes the C header files that specify the interface
