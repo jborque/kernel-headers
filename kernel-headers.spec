@@ -173,6 +173,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Mar 04 2019 Laura Abbott <labbott@redhat.com> - 5.0.0-0.rc8.git0.1
+- Linux v5.0.0
+
 * Mon Feb 25 2019 Laura Abbott <labbott@redhat.com> - 5.0.0-0.rc8.git0.1
 - Linux v5.0-rc8.git0
 
