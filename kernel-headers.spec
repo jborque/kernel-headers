@@ -27,7 +27,7 @@
 %if 0%{?released_kernel}
 
 # Do we have a -stable update to apply?
-%define stable_update 7
+%define stable_update 9
 # Set rpm version accordingly
 %if 0%{?stable_update}
 %define stablerev %{stable_update}
@@ -172,6 +172,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Apr 22 2019 Laura Abbott <labbott@redhat.com> - 5.0.9-300
+- Linux v5.0.9
+
 * Mon Apr 08 2019 Laura Abbott <labbott@redhat.com> - 5.0.7-300
 - Linux v5.0.7
 
