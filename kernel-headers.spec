@@ -27,7 +27,7 @@
 %if 0%{?released_kernel}
 
 # Do we have a -stable update to apply?
-%define stable_update 5
+%define stable_update 7
 # Set rpm version accordingly
 %if 0%{?stable_update}
 %define stablerev %{stable_update}
@@ -172,6 +172,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Tue Jun 04 2019 Jeremy Cline <jcline@redhat.com> - 5.1.7-300
+- Linux v5.1.7
+
 * Sat May 25 2019 Jeremy Cline <jcline@redhat.com> - 5.1.5-300
 - Linux v5.1.5
 
