@@ -27,7 +27,7 @@
 %if 0%{?released_kernel}
 
 # Do we have a -stable update to apply?
-%define stable_update 9
+%define stable_update 10
 # Set rpm version accordingly
 %if 0%{?stable_update}
 %define stablerev %{stable_update}
@@ -172,6 +172,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Mon Jun 17 2019 Jeremy Cline <jcline@redhat.com> - 5.1.10-300
+- Linux v5.1.10
+
 * Tue Jun 11 2019 Jeremy Cline <jcline@redhat.com> - 5.1.9-300
 - Linux v5.1.9
 
