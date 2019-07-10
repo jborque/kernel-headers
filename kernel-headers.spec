@@ -27,7 +27,7 @@
 %if 0%{?released_kernel}
 
 # Do we have a -stable update to apply?
-%define stable_update 16
+%define stable_update 17
 # Set rpm version accordingly
 %if 0%{?stable_update}
 %define stablerev %{stable_update}
@@ -172,6 +172,9 @@ done
 %{_prefix}/*-linux-gnu/*
 
 %changelog
+* Wed Jul 10 2019 Jeremy Cline <jcline@redhat.com> - 5.1.17-300
+- Linux v5.1.17
+
 * Wed Jul 03 2019 Jeremy Cline <jcline@redhat.com> - 5.1.16-300
 - Linux v5.1.16
 
